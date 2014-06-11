@@ -4,11 +4,11 @@ class ProjustorServo
 {
 	public:
 		ProjustorServo(int pin);
-                void MoveObj(void);
+                void MoveObjToPos(long newPosition, long height);
+                void MoveObjToAng(int newAng);
 		long objPosition(void);
 	private:
 		int _pin; //pin number of Arduino that is connected with SIG pin of servo
-                long _position; // position of the servo
                 
                 Servo servo;
 };
