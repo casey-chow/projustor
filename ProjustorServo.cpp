@@ -1,6 +1,6 @@
 #include "ProjustorServo.h"
+#include "Servo.h"
 #include <math.h>
-#include <Servo.h>
 
 ProjustorServo::ProjustorServo(int pin)
 {
